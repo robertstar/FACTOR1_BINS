@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/sim/fifo_ser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_ser
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_arp/sim/fifo_arp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_arp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_apo/sim/fifo_apo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_apo
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pll
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/RXMajority3Filter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RXMajority3Filter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ad9850.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad9850
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/baud_rate_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_rate_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/cordic32.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cordic32
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/crc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module crc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/events.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module events
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_adc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_adc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual2.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual_v.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_v
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs485_dfs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485_bins.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rs485_bins
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/serial_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/serial_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serial_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_rx_bins.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx_bins
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_bins.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_bins
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module factor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 16:25:35 2021
+# Process ID: 29548
+# Current directory: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6
+# Command line: vivado -log factor1_bins.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source factor1_bins.tcl
+# Log file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/factor1_bins.vds
+# Journal file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/vivado.jou
+#-----------------------------------------------------------
+source factor1_bins.tcl -notrace

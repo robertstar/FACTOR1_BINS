@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fifo_ser_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_19.12.19_0813/project_led.runs/fifo_ser_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

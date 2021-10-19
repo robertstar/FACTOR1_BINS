@@ -1,0 +1,52 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -wto 359d8271479b45199fcab80b66f7d475 --incr --debug typical --relax --mt 8 -L fifo_generator_v13_2_2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot factor_behav xil_defaultlib.factor xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 24 for port x_start [/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:838]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 24 for port y_start [/home/aleks/macket_2/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:839]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=20.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pll_clk_wiz
+Compiling module xil_defaultlib.pll
+Compiling module xil_defaultlib.crc
+Compiling module xil_defaultlib.events
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_sync_stag...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_a...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_DATA_CO...
+Compiling module xil_defaultlib.fifo_apo
+Compiling module xil_defaultlib.ram_adc
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_s...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_COMMON_...
+Compiling module xil_defaultlib.fifo_arp
+Compiling module xil_defaultlib.mac
+Compiling module xil_defaultlib.ad9850
+Compiling module xil_defaultlib.baud_rate_gen(speed=9600)
+Compiling module xil_defaultlib.serial_rx
+Compiling module xil_defaultlib.serial_tx
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_sync_stag...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_a...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_DATA_CO...
+Compiling module xil_defaultlib.fifo_ser
+Compiling module xil_defaultlib.rs485_dfs
+Compiling module xil_defaultlib.RXMajority3Filter
+Compiling module xil_defaultlib.uart_rx_bins_default
+Compiling module xil_defaultlib.uart_tx_bins_default
+Compiling module xil_defaultlib.rs485_bins
+Compiling module xil_defaultlib.ram_dual2(words=64,addr_w=6)
+Compiling module xil_defaultlib.ram_dual_v(words=64,addr_w=6)
+Compiling module xil_defaultlib.cordic32_default
+Compiling module xil_defaultlib.factor
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot factor_behav

@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_led.srcs/sources_1/ip/pll" --include "../../../../project_led.srcs/sources_1/ip/pll_dac" \
+"../../../../project_led.srcs/sources_1/ip/fifo_ser/sim/fifo_ser.v" \
+"../../../../project_led.srcs/sources_1/ip/fifo_arp/sim/fifo_arp.v" \
+"../../../../project_led.srcs/sources_1/ip/fifo_apo/sim/fifo_apo.v" \
+"../../../../project_led.srcs/sources_1/ip/pll/pll_clk_wiz.v" \
+"../../../../project_led.srcs/sources_1/ip/pll/pll.v" \
+
+sv xil_defaultlib  --include "../../../../project_led.srcs/sources_1/ip/pll" --include "../../../../project_led.srcs/sources_1/ip/pll_dac" \
+"../../../../project_led.srcs/sources_1/new/RXMajority3Filter.sv" \
+"../../../../project_led.srcs/sources_1/new/ad9850.sv" \
+"../../../../project_led.srcs/sources_1/new/baud_rate_gen.sv" \
+"../../../../project_led.srcs/sources_1/new/cordic32.sv" \
+"../../../../project_led.srcs/sources_1/new/crc.sv" \
+"../../../../project_led.srcs/sources_1/new/events.sv" \
+"../../../../project_led.srcs/sources_1/new/mac.sv" \
+"../../../../project_led.srcs/sources_1/new/ram_adc.sv" \
+"../../../../project_led.srcs/sources_1/new/ram_dual2.sv" \
+"../../../../project_led.srcs/sources_1/new/ram_dual_v.sv" \
+"../../../../project_led.srcs/sources_1/new/rs485.sv" \
+"../../../../project_led.srcs/sources_1/new/rs485_bins.sv" \
+"../../../../project_led.srcs/sources_1/new/serial_rx.sv" \
+"../../../../project_led.srcs/sources_1/new/serial_tx.sv" \
+"../../../../project_led.srcs/sources_1/new/uart_rx_bins.sv" \
+"../../../../project_led.srcs/sources_1/new/uart_tx_bins.sv" \
+"../../../../project_led.srcs/sources_1/new/factor.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

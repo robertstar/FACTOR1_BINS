@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX4
+Size               8M
+Start Address      0x00000000
+End Address        0x007FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    Dec 24 12:32:59 2019    /home/vladimir/FACTOR-A35_19.12.19_0813/project_led.runs/impl_5/factor.bit

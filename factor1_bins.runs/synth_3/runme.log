@@ -1,0 +1,1729 @@
+
+*** Running vivado
+    with args -log factor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source factor.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source factor.tcl -notrace
+Command: synth_design -top factor -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11254 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1279.914 ; gain = 80.844 ; free physical = 1186 ; free virtual = 21603
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'factor' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter WRITE bound to: 3'b001 
+	Parameter READ bound to: 3'b010 
+	Parameter PAUSE bound to: 3'b011 
+	Parameter adc_read_ofset bound to: 270 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pll' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.v:73]
+INFO: [Synth 8-6157] synthesizing module 'pll_clk_wiz' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll_clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:19473]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.250000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:25762]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/opt/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'pll_clk_wiz' (4#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll_clk_wiz.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (5#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.v:73]
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:23]
+	Parameter rx_IDLE bound to: 0 - type: integer 
+	Parameter rx_PREAMBULE bound to: 1 - type: integer 
+	Parameter rx_ETH_layer bound to: 2 - type: integer 
+	Parameter rx_IPv4_layer bound to: 3 - type: integer 
+	Parameter rx_ARP_layer bound to: 4 - type: integer 
+	Parameter rx_ARP_TRL bound to: 5 - type: integer 
+	Parameter rx_ARP_FCS bound to: 6 - type: integer 
+	Parameter rx_ICMP_layer bound to: 7 - type: integer 
+	Parameter rx_ICMP_FCS bound to: 8 - type: integer 
+	Parameter rx_UDP_layer bound to: 9 - type: integer 
+	Parameter rx_APO bound to: 10 - type: integer 
+	Parameter rx_DFS bound to: 11 - type: integer 
+	Parameter rx_RS485 bound to: 12 - type: integer 
+	Parameter rx_VARU bound to: 13 - type: integer 
+	Parameter rx_BINS bound to: 14 - type: integer 
+	Parameter rx_DELAY bound to: 15 - type: integer 
+	Parameter tx_IDLE bound to: 0 - type: integer 
+	Parameter tx_ADC bound to: 1 - type: integer 
+	Parameter tx_ARP bound to: 2 - type: integer 
+	Parameter tx_UDP bound to: 3 - type: integer 
+	Parameter tx_DFS bound to: 4 - type: integer 
+	Parameter tx_BINS bound to: 5 - type: integer 
+	Parameter tx_26100 bound to: 6 - type: integer 
+	Parameter tx_ZERO bound to: 7 - type: integer 
+	Parameter tx_FCS bound to: 8 - type: integer 
+	Parameter tx_ICMP bound to: 9 - type: integer 
+	Parameter tx_IGP bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:180]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:182]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:183]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:184]
+INFO: [Synth 8-6157] synthesizing module 'crc' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/crc.sv:23]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'crc' (6#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/crc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'events' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/events.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'events' (7#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/events.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_apo' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_apo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_apo' (8#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_apo_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:512]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:614]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:833]
+INFO: [Synth 8-6157] synthesizing module 'ram_adc' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_adc.sv:45]
+	Parameter words bound to: 4096 - type: integer 
+	Parameter addr_w bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_adc' (9#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_adc.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_arp' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_arp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_arp' (10#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_arp_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ser' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_ser_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ser' (11#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/fifo_ser_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_v' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual_v.sv:23]
+	Parameter words bound to: 127 - type: integer 
+	Parameter addr_w bound to: 7 - type: integer 
+	Parameter addr_end bound to: 113 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_v' (12#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual_v.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1771]
+INFO: [Synth 8-5575] Util Can't resize: variable case item [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1815]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2942]
+INFO: [Synth 8-6157] synthesizing module 'ila_eth_rx' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/ila_eth_rx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_eth_rx' (13#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/ila_eth_rx_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2963]
+INFO: [Synth 8-6157] synthesizing module 'ila_eth_tx' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/ila_eth_tx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_eth_tx' (14#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/realtime/ila_eth_tx_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_eth_rx1'. This will prevent further optimization [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2942]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'event_arp'. This will prevent further optimization [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:346]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_eth_tx1'. This will prevent further optimization [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2963]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'crc_inst'. This will prevent further optimization [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:335]
+WARNING: [Synth 8-6014] Unused sequential element eth_MAC_dst_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:616]
+WARNING: [Synth 8-6014] Unused sequential element eth_MAC_src_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:623]
+WARNING: [Synth 8-6014] Unused sequential element eth_IPv4_tlen_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:680]
+WARNING: [Synth 8-6014] Unused sequential element eth_IPv4_IP_src_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:684]
+WARNING: [Synth 8-6014] Unused sequential element eth_UDP_tlen_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:700]
+WARNING: [Synth 8-6014] Unused sequential element eth_UDP_SP_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:834]
+WARNING: [Synth 8-6014] Unused sequential element dfs_timeout_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1740]
+WARNING: [Synth 8-6014] Unused sequential element dfs_bytes_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1743]
+WARNING: [Synth 8-6014] Unused sequential element eth_tx_p_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2305]
+WARNING: [Synth 8-6014] Unused sequential element eth_tx_temp_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2309]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (15#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ad9850' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ad9850.sv:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ad9850.sv:68]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ad9850.sv:130]
+INFO: [Synth 8-6155] done synthesizing module 'ad9850' (16#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ad9850.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rs485_dfs' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485.sv:23]
+	Parameter speed bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_dfs' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_rx_dfs.sv:32]
+	Parameter CLKS_PER_BIT bound to: 5208 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter RX_START_BIT bound to: 3'b001 
+	Parameter RX_DATA_BITS bound to: 3'b010 
+	Parameter RX_PARITY_BIT bound to: 3'b011 
+	Parameter RX_STOP_BIT bound to: 3'b100 
+	Parameter CLEANUP bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_dfs' (17#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_rx_dfs.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_dfs' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_dfs.sv:30]
+	Parameter CLKS_PER_BIT bound to: 5208 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter TX_START_BIT bound to: 3'b001 
+	Parameter TX_DATA_BITS bound to: 3'b010 
+	Parameter TX_STOP_BIT bound to: 3'b011 
+	Parameter CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_dfs' (18#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_dfs.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'rs485_dfs' (19#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rs485_bins' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485_bins.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/UART_RX.sv:30]
+	Parameter CLKS_PER_BIT bound to: 1085 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter RX_START_BIT bound to: 3'b001 
+	Parameter RX_DATA_BITS bound to: 3'b010 
+	Parameter RX_PARITY_BIT bound to: 3'b011 
+	Parameter RX_STOP_BIT bound to: 3'b100 
+	Parameter CLEANUP bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (20#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/UART_RX.sv:30]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485_bins.sv:122]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485_bins.sv:160]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_bins' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_bins.sv:23]
+	Parameter CLOCK_FREQUENCY bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: 2'b01 
+	Parameter HALF_BAUD_CLK_REG_VALUE bound to: 541 - type: integer 
+	Parameter HALF_BAUD_CLK_REG_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_bins' (21#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_bins.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'rs485_bins' (22#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/rs485_bins.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual2' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual2.sv:23]
+	Parameter words bound to: 64 - type: integer 
+	Parameter addr_w bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual2' (23#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_v__parameterized0' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual_v.sv:23]
+	Parameter words bound to: 64 - type: integer 
+	Parameter addr_w bound to: 6 - type: integer 
+	Parameter addr_end bound to: 49 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_v__parameterized0' (23#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/ram_dual_v.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:776]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:788]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:815]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:820]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:845]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:923]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:1020]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:1033]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:1993]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2057]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2129]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2373]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2172]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2113]
+WARNING: [Synth 8-6014] Unused sequential element skp_timeout_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:1871]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[29] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[28] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[27] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[26] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[25] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[24] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[23] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[22] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[21] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[20] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[19] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[18] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[17] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[16] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[15] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[14] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[4] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[3] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element apo_comm_reg[2] was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2072]
+WARNING: [Synth 8-6014] Unused sequential element period_varu_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2087]
+WARNING: [Synth 8-6014] Unused sequential element trigger_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2155]
+WARNING: [Synth 8-6014] Unused sequential element adc_ch_cnt_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2177]
+WARNING: [Synth 8-6014] Unused sequential element lock_st_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:2186]
+WARNING: [Synth 8-3848] Net bclk in module/entity factor does not have driver. [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:78]
+INFO: [Synth 8-6155] done synthesizing module 'factor' (24#1) [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/factor.sv:23]
+WARNING: [Synth 8-3917] design factor has port led_1 driven by constant 1
+WARNING: [Synth 8-3917] design factor has port PHY_MDC driven by constant 1
+WARNING: [Synth 8-3917] design factor has port lrck driven by constant 0
+WARNING: [Synth 8-3917] design factor has port ddata driven by constant 0
+WARNING: [Synth 8-3917] design factor has port PHY_MDIO driven by constant 1
+WARNING: [Synth 8-3331] design events has unconnected port rst
+WARNING: [Synth 8-3331] design ad9850 has unconnected port rst
+WARNING: [Synth 8-3331] design ram_adc has unconnected port rd_clk
+WARNING: [Synth 8-3331] design mac has unconnected port reset_n
+WARNING: [Synth 8-3331] design factor has unconnected port bclk
+WARNING: [Synth 8-3331] design factor has unconnected port PHY_TXC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1386.539 ; gain = 187.469 ; free physical = 1129 ; free virtual = 21549
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1386.539 ; gain = 187.469 ; free physical = 1146 ; free virtual = 21566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1386.539 ; gain = 187.469 ; free physical = 1146 ; free virtual = 21566
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26100'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26100'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26010'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26010'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_rx'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_rx'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_tx'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_tx'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_rx'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_rx'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_tx'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_tx'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_apo/fifo_apo/fifo_apo_in_context.xdc] for cell 'mac_inst/fifo_apo_inst'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_apo/fifo_apo/fifo_apo_in_context.xdc] for cell 'mac_inst/fifo_apo_inst'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_arp/fifo_arp/fifo_arp_in_context.xdc] for cell 'mac_inst/fifo_arp_inst'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/fifo_arp/fifo_arp/fifo_arp_in_context.xdc] for cell 'mac_inst/fifo_arp_inst'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/ila_eth_rx/ila_eth_rx/ila_eth_rx_in_context.xdc] for cell 'mac_inst/ila_eth_rx1'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/ila_eth_rx/ila_eth_rx/ila_eth_rx_in_context.xdc] for cell 'mac_inst/ila_eth_rx1'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/ila_eth_tx/ila_eth_tx/ila_eth_tx_in_context.xdc] for cell 'mac_inst/ila_eth_tx1'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/.Xil/Vivado-11228-pc/ila_eth_tx/ila_eth_tx/ila_eth_tx_in_context.xdc] for cell 'mac_inst/ila_eth_tx1'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll_inst/inst'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll_inst/inst'
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll_inst/inst'
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/ip/pll/pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/constrs_1/new/LED.xdc]
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/constrs_1/new/LED.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/constrs_1/new/LED.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/dont_touch.xdc]
+Finished Parsing XDC File [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1736.305 ; gain = 0.000 ; free physical = 857 ; free virtual = 21284
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_26010' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_26100' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_apo_inst' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_arp_inst' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/ila_eth_rx1' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/ila_eth_tx1' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_bins_inst/fifo_rx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_bins_inst/fifo_tx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_dfs_inst/fifo_rx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_dfs_inst/fifo_tx' at clock pin 'wr_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1736.305 ; gain = 537.234 ; free physical = 972 ; free virtual = 21399
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1736.305 ; gain = 537.234 ; free physical = 972 ; free virtual = 21399
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for mac_inst/fifo_26010. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_inst/fifo_26100. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rs485_bins_inst/fifo_rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rs485_bins_inst/fifo_tx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rs485_dfs_inst/fifo_rx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for rs485_dfs_inst/fifo_tx. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for pll_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for pll_inst/inst. (constraint file  /home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/dont_touch.xdc, line 13).
+Applied set_property DONT_TOUCH = true for mac_inst/fifo_apo_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_inst/fifo_arp_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_inst/ila_eth_rx1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for mac_inst/ila_eth_tx1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1736.305 ; gain = 537.234 ; free physical = 971 ; free virtual = 21398
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'event_26100_dfs_wr_reg' into 'event_26100_bins_wr_reg' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:376]
+INFO: [Synth 8-4471] merging register 'ram_dfs_26010_din_reg[7:0]' into 'ram_dfs_26100_din_reg[7:0]' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1530]
+WARNING: [Synth 8-6014] Unused sequential element event_26100_dfs_wr_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:376]
+WARNING: [Synth 8-6014] Unused sequential element ram_dfs_26010_din_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:1530]
+WARNING: [Synth 8-3936] Found unconnected internal register 'fcs_t_reg' and it is trimmed from '32' to '24' bits. [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/mac.sv:2894]
+.p 24
+.s 14
+	 Default rx_IDLE 
+	 rx_IDLE rx_PREAMBULE 
+	 rx_IDLE rx_IDLE 
+	 rx_PREAMBULE rx_IDLE 
+	 rx_PREAMBULE rx_ETH_layer 
+	 rx_ETH_layer rx_IDLE 
+	 rx_ETH_layer rx_IPv4_layer 
+	 rx_ETH_layer rx_ARP_layer 
+	 rx_IPv4_layer rx_IDLE 
+	 rx_IPv4_layer rx_UDP_layer 
+	 rx_ARP_layer rx_IDLE 
+	 rx_ICMP_layer rx_IDLE 
+	 rx_UDP_layer rx_IDLE 
+	 rx_UDP_layer rx_APO 
+	 rx_UDP_layer rx_DFS 
+	 rx_UDP_layer rx_RS485 
+	 rx_UDP_layer rx_BINS 
+	 rx_UDP_layer rx_VARU 
+	 rx_APO rx_IDLE 
+	 rx_DFS rx_IDLE 
+	 rx_RS485 rx_IDLE 
+	 rx_BINS rx_IDLE 
+	 rx_VARU rx_IDLE 
+	 rx_DELAY rx_IDLE 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'eth_rx_state_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_pre_arp_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'dfs_st_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_pre_26100_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_pre_26010_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_tx_i_reg' in module 'mac'
+INFO: [Synth 8-5546] ROM "varu_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_IPv4_type" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_IPv4_IP_dst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_ARP_MAC_src" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_ARP_IP_src" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_ARP_IP_dst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_UDP_DP" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_UDP_data_len" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_eth_arp_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_arp_bcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_arp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dfs_st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dfs_26100_wr_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_bins_26100_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_bins_26100_rd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_26100" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_26100" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_26100_crc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26100_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26100_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dfs_26010_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dfs_26010_rd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_26010" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_26010" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26010_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26010_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "crcen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "crcen" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_tx_pre" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_tx_pre" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fifo_eth_adc_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "eth_ADC_IPv4_ID" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "eth_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "eth_rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "eth_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_rx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "eth_rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_eth_arp_din" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "event_eth_arp_rd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_pre_arp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dfs_st" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_26100_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_adc_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_26100_IPv4_ID" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_26010_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eth_26010_IPv4_ID" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fcs_t" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'alg_st_reg' in module 'ad9850'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_dds_reg' in module 'ad9850'
+INFO: [Synth 8-5544] ROM "alg_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "alg_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bit_no" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sdata" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "alg_dds" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_rx_dfs'
+INFO: [Synth 8-5544] ROM "r_sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx_dfs'
+INFO: [Synth 8-5544] ROM "o_TX_Serial" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_tx_state_reg' in module 'rs485_dfs'
+INFO: [Synth 8-5544] ROM "fifo_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_RX'
+INFO: [Synth 8-5544] ROM "r_sync" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_SM_Main" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "txBaudClk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "txCounter1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txCounter1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'write_st_reg' in module 'rs485_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_tx_state_reg' in module 'rs485_bins'
+INFO: [Synth 8-5544] ROM "sync_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "write_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "write_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer_10ms" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fifo_tx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'alg_rst_phy_reg' in module 'factor'
+INFO: [Synth 8-802] inferred FSM for state register 'bins_st_reg' in module 'factor'
+INFO: [Synth 8-802] inferred FSM for state register 'apo_alg_reg' in module 'factor'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_work_reg' in module 'factor'
+INFO: [Synth 8-802] inferred FSM for state register 'env_st_reg' in module 'factor'
+INFO: [Synth 8-802] inferred FSM for state register 'adc_i_reg' in module 'factor'
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "apo_comm_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "timer_rst" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "r_rst" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "rk_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cordic_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "fd" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_adc_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "cs_o" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "data_adc_ok" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "test_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "test_signal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ram_bins_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_bins_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "ram_bins_26100_wr_addr" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "bins_timeout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "env_st" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "env_st" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_ok" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "adc_wr_en" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "adc_wr_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_wr_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "copy_st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "adc_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "adc_ch" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "adc_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "timer_rst" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_rst2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bins_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "freq_load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "byte_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "work_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "env_timer" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "envelope_t" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_ch" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "adc_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                 0000000000000000
+                 iSTATE1 |                               01 |                 0000000000000001
+                 iSTATE2 |                               10 |                 0000000000000010
+                  iSTATE |                               11 |                 0000000000000011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_tx_i_reg' using encoding 'sequential' in module 'mac'
+INFO: [Synth 8-6159] Found Keep on FSM register 'eth_rx_state_reg' in module 'mac', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE3 |                              011 |                             0011
+                 iSTATE2 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dfs_st_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE0 |                               10 |                             0010
+                 iSTATE1 |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_pre_26100_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                               00 |                             0000
+                  iSTATE |                               01 |                             0001
+                 iSTATE0 |                               10 |                             0010
+                 iSTATE1 |                               11 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_pre_26010_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_pre_arp_reg' using encoding 'one-hot' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_st_reg' using encoding 'one-hot' in module 'ad9850'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE1 |                     000000000100 |                             0010
+                  iSTATE |                     000000001000 |                             0011
+                 iSTATE0 |                     000000010000 |                             0100
+                iSTATE10 |                     000000100000 |                             0101
+                 iSTATE9 |                     000001000000 |                             0110
+                 iSTATE7 |                     000010000000 |                             0111
+                 iSTATE8 |                     000100000000 |                             1000
+                 iSTATE6 |                     001000000000 |                             1001
+                 iSTATE3 |                     010000000000 |                             1010
+                 iSTATE2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_dds_reg' using encoding 'one-hot' in module 'ad9850'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+            RX_START_BIT |                            00010 |                              001
+            RX_DATA_BITS |                            00100 |                              010
+             RX_STOP_BIT |                            01000 |                              100
+                 CLEANUP |                            10000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'one-hot' in module 'uart_rx_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            TX_START_BIT |                              001 |                              001
+            TX_DATA_BITS |                              010 |                              010
+             TX_STOP_BIT |                              011 |                              011
+                 CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE5 |                              010 |                             0010
+                 iSTATE1 |                              011 |                             0011
+                 iSTATE2 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE3 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_tx_state_reg' using encoding 'sequential' in module 'rs485_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+            RX_START_BIT |                           000010 |                              001
+            RX_DATA_BITS |                           000100 |                              010
+           RX_PARITY_BIT |                           001000 |                              011
+             RX_STOP_BIT |                           010000 |                              100
+                 CLEANUP |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                       0000000001 |                             0000
+                 iSTATE2 |                       0000000010 |                             0001
+                 iSTATE1 |                       0000000100 |                             0010
+                 iSTATE0 |                       0000001000 |                             0011
+                  iSTATE |                       0000010000 |                             0100
+                 iSTATE8 |                       0000100000 |                             0101
+                 iSTATE6 |                       0001000000 |                             0110
+                 iSTATE4 |                       0010000000 |                             0111
+                 iSTATE5 |                       0100000000 |                             1000
+                 iSTATE7 |                       1000000000 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_tx_state_reg' using encoding 'one-hot' in module 'rs485_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_st_reg' using encoding 'one-hot' in module 'rs485_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_rst_phy_reg' using encoding 'one-hot' in module 'factor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0100 |                             0010
+                 iSTATE2 |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'apo_alg_reg' using encoding 'one-hot' in module 'factor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'adc_i_reg' using encoding 'sequential' in module 'factor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'env_st_reg' using encoding 'one-hot' in module 'factor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0100 |                             0010
+                 iSTATE2 |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bins_st_reg' using encoding 'one-hot' in module 'factor'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                         00000000
+                 iSTATE0 |                                1 |                         00000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_work_reg' using encoding 'sequential' in module 'factor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1736.305 ; gain = 537.234 ; free physical = 952 ; free virtual = 21366
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 8     
+	  10 Input     20 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 8     
+	   2 Input     13 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 12    
+	   2 Input      7 Bit       Adders := 7     
+	   2 Input      6 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 14    
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 96    
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 260   
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 96    
++---Muxes : 
+	  29 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 22    
+	  10 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	  26 Input     32 Bit        Muxes := 1     
+	  29 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 6     
+	  15 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 12    
+	  10 Input     16 Bit        Muxes := 1     
+	  23 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	  29 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 4     
+	  20 Input     16 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 2     
+	   5 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 6     
+	   4 Input     12 Bit        Muxes := 1     
+	  12 Input     12 Bit        Muxes := 1     
+	  15 Input     12 Bit        Muxes := 1     
+	   6 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	  14 Input     10 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 104   
+	   5 Input      8 Bit        Muxes := 4     
+	  10 Input      8 Bit        Muxes := 52    
+	   4 Input      8 Bit        Muxes := 159   
+	  12 Input      8 Bit        Muxes := 1     
+	  15 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 2     
+	  13 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 72    
+	   2 Input      7 Bit        Muxes := 7     
+	   5 Input      7 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	  13 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 20    
+	   6 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	  10 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 24    
+	   8 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	   7 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 17    
+	   3 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 3     
+	  13 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 9     
+	   4 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 276   
+	   4 Input      1 Bit        Muxes := 79    
+	  10 Input      1 Bit        Muxes := 30    
+	   5 Input      1 Bit        Muxes := 34    
+	  13 Input      1 Bit        Muxes := 8     
+	  14 Input      1 Bit        Muxes := 22    
+	  12 Input      1 Bit        Muxes := 9     
+	   6 Input      1 Bit        Muxes := 46    
+	   3 Input      1 Bit        Muxes := 33    
+	   7 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 1     
+	  87 Input      1 Bit        Muxes := 2     
+	  46 Input      1 Bit        Muxes := 44    
+	  20 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module factor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 88    
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 18    
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   6 Input     32 Bit        Muxes := 6     
+	  15 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 3     
+	  20 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 3     
+	  15 Input     12 Bit        Muxes := 1     
+	   6 Input     12 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 11    
+	   4 Input      6 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	  20 Input      4 Bit        Muxes := 1     
+	  21 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  15 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 203   
+	   3 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 35    
+	   5 Input      1 Bit        Muxes := 3     
+	  87 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 1     
+	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 36    
+	  46 Input      1 Bit        Muxes := 44    
+	   7 Input      1 Bit        Muxes := 2     
+	  20 Input      1 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 3     
+Module crc 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+Module events 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module ram_adc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ram_dual_v 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module mac 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	  10 Input     20 Bit       Adders := 3     
+	   2 Input     17 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 6     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      7 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 8     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 233   
+	                7 Bit    Registers := 6     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	  29 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	  10 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	  26 Input     32 Bit        Muxes := 1     
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 9     
+	  10 Input     16 Bit        Muxes := 1     
+	  23 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	  14 Input     16 Bit        Muxes := 1     
+	  29 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	  14 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 3     
+	  10 Input      8 Bit        Muxes := 50    
+	   2 Input      8 Bit        Muxes := 87    
+	   4 Input      8 Bit        Muxes := 156   
+	  12 Input      8 Bit        Muxes := 1     
+	  15 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 2     
+	  14 Input      8 Bit        Muxes := 2     
+	  13 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 68    
+	   2 Input      7 Bit        Muxes := 7     
+	   5 Input      7 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	  13 Input      6 Bit        Muxes := 1     
+	   4 Input      6 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 17    
+	   8 Input      4 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 2     
+	  12 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	  13 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 4     
+	   6 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 53    
+	   4 Input      1 Bit        Muxes := 43    
+	  10 Input      1 Bit        Muxes := 21    
+	   5 Input      1 Bit        Muxes := 19    
+	  13 Input      1 Bit        Muxes := 8     
+	  14 Input      1 Bit        Muxes := 22    
+	  12 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 8     
+Module ad9850 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  12 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 7     
+Module uart_rx_dfs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 4     
+Module uart_tx_dfs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   5 Input     13 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 8     
+Module rs485_dfs 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 6     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   6 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 4     
+Module uart_tx_bins 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+Module rs485_bins 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	  10 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+Module ram_dual2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module ram_dual_v__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'event_26100_dfs/temp1_reg' into 'event_26100_bins/temp1_reg' [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/events.sv:56]
+WARNING: [Synth 8-6014] Unused sequential element event_26100_dfs/temp1_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/events.sv:56]
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_tx_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_26100_crc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "varu_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dfs_st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26100_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26100_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_26100" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_26100" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_bins_26100_rd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_bins_26100_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26010_din" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_26010_wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_26010" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addr_26010" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dfs_26010_rd_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_dfs_26010_rd_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_arp" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "eth_pre_arp_bcnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_eth_arp_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fifo_eth_adc_rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-6430] The Block RAM ram_adc/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM ram_dfs_26010/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-6430] The Block RAM ram_dfs_26100/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+WARNING: [Synth 8-6014] Unused sequential element uart_tx_dfs/r_TX_Done_reg was removed.  [/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.srcs/sources_1/new/uart_tx_dfs.sv:65]
+INFO: [Synth 8-5546] ROM "uart_tx_inst/txBaudClk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "write_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "timer_rst" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "r_rst" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "apo_comm_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "apo_comm_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "test_cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "test_signal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design factor has port led_1 driven by constant 1
+WARNING: [Synth 8-3917] design factor has port PHY_MDC driven by constant 1
+WARNING: [Synth 8-3917] design factor has port lrck driven by constant 0
+WARNING: [Synth 8-3917] design factor has port ddata driven by constant 0
+WARNING: [Synth 8-3917] design factor has port PHY_MDIO driven by constant 1
+WARNING: [Synth 8-3331] design events has unconnected port rst
+WARNING: [Synth 8-3331] design ad9850 has unconnected port rst
+WARNING: [Synth 8-3331] design mac has unconnected port reset_n
+WARNING: [Synth 8-3331] design factor has unconnected port bclk
+WARNING: [Synth 8-3331] design factor has unconnected port PHY_TXC
+INFO: [Synth 8-6430] The Block RAM ram_adc/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_adc/ram_reg to conserve power
+INFO: [Synth 8-6430] The Block RAM ram_dfs_26010/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_dfs_26010/ram_reg to conserve power
+INFO: [Synth 8-6430] The Block RAM ram_dfs_26100/ram_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+INFO: [Synth 8-4652] Swapped enable and write-enable on 1 RAM instances of RAM ram_dfs_26100/ram_reg to conserve power
+RAM Pipeline Warning: Read Address Register Found For RAM ram_adc/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_dfs_26010/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_dfs_26100/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][6]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][5]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][4]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][3]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][2]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][1]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (apo_comm_reg[5][0]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[15]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[14]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[13]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[12]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[11]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[10]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[9]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[8]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (adc_ch_reg[7]) is unused and will be removed from module factor.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\bins_data_timeout_reg[7] )
+INFO: [Synth 8-3886] merging instance 'copy_st_reg[3]' (FDE) to 'copy_st_reg[2]'
+INFO: [Synth 8-3886] merging instance 'copy_st_reg[2]' (FDE) to 'copy_st_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\copy_st_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (copy_st_reg[1]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (bins_data_timeout_reg[7]) is unused and will be removed from module factor.
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[20]' (FDE) to 'mac_inst/eth_26100_crc_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[21]' (FDE) to 'mac_inst/eth_26100_crc_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[22]' (FDE) to 'mac_inst/eth_26100_crc_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[23]' (FDE) to 'mac_inst/eth_26100_crc_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[24]' (FDE) to 'mac_inst/eth_26100_crc_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[25]' (FDE) to 'mac_inst/eth_26100_crc_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[26]' (FDE) to 'mac_inst/eth_26100_crc_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[27]' (FDE) to 'mac_inst/eth_26100_crc_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[28]' (FDE) to 'mac_inst/eth_26100_crc_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[29]' (FDE) to 'mac_inst/eth_26100_crc_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26100_crc_reg[30]' (FDE) to 'mac_inst/eth_26100_crc_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\eth_26100_crc_reg[31] )
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[20]' (FDE) to 'mac_inst/eth_26010_crc_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[21]' (FDE) to 'mac_inst/eth_26010_crc_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[22]' (FDE) to 'mac_inst/eth_26010_crc_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[23]' (FDE) to 'mac_inst/eth_26010_crc_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[24]' (FDE) to 'mac_inst/eth_26010_crc_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[25]' (FDE) to 'mac_inst/eth_26010_crc_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[26]' (FDE) to 'mac_inst/eth_26010_crc_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[27]' (FDE) to 'mac_inst/eth_26010_crc_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[28]' (FDE) to 'mac_inst/eth_26010_crc_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[29]' (FDE) to 'mac_inst/eth_26010_crc_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_26010_crc_reg[30]' (FDE) to 'mac_inst/eth_26010_crc_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\eth_26010_crc_reg[31] )
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[20]' (FDE) to 'mac_inst/eth_adc_crc_reg[21]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[21]' (FDE) to 'mac_inst/eth_adc_crc_reg[22]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[22]' (FDE) to 'mac_inst/eth_adc_crc_reg[23]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[23]' (FDE) to 'mac_inst/eth_adc_crc_reg[24]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[24]' (FDE) to 'mac_inst/eth_adc_crc_reg[25]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[25]' (FDE) to 'mac_inst/eth_adc_crc_reg[26]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[26]' (FDE) to 'mac_inst/eth_adc_crc_reg[27]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[27]' (FDE) to 'mac_inst/eth_adc_crc_reg[28]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[28]' (FDE) to 'mac_inst/eth_adc_crc_reg[29]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[29]' (FDE) to 'mac_inst/eth_adc_crc_reg[30]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_adc_crc_reg[30]' (FDE) to 'mac_inst/eth_adc_crc_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\eth_adc_crc_reg[31] )
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[14]' (FDE) to 'mac_inst/dfs_zero_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[15]' (FDE) to 'mac_inst/dfs_zero_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[13]' (FDE) to 'mac_inst/dfs_zero_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[12]' (FDE) to 'mac_inst/dfs_zero_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[11]' (FDE) to 'mac_inst/dfs_zero_reg[10]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[0]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[1]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[2]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[3]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[4]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[5]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[6]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[7]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[8]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[9]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[10]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[11]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[12]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[13]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/zero_cnt_reg[14]' (FDE) to 'mac_inst/zero_cnt_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\zero_cnt_reg[15] )
+INFO: [Synth 8-3886] merging instance 'mac_inst/eth_tx_pre_reg[3]' (FDE) to 'mac_inst/eth_tx_pre_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\eth_tx_pre_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (eth_tx_pre_reg[2]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (zero_cnt_reg[15]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_adc_crc_reg[31]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_26100_crc_reg[31]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_26010_crc_reg[31]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (addr_26010_reg[7]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (addr_26010_reg[6]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (addr_26100_reg[7]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (addr_26100_reg[6]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[7]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[6]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[5]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[4]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[3]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[2]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[1]) is unused and will be removed from module mac.
+WARNING: [Synth 8-3332] Sequential element (eth_ARP_IP_dst_reg[0]) is unused and will be removed from module mac.
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[9]' (FDE) to 'mac_inst/dfs_zero_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[8]' (FDE) to 'mac_inst/dfs_zero_reg[7]'
+INFO: [Synth 8-3886] merging instance 'mac_inst/dfs_zero_reg[10]' (FDE) to 'mac_inst/dfs_zero_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mac_inst/\dfs_zero_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (dfs_zero_reg[7]) is unused and will be removed from module mac.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:03 . Memory (MB): peak = 1739.305 ; gain = 540.234 ; free physical = 859 ; free virtual = 21307
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mac_inst    | ram_adc/ram_reg       | 4 K x 8(NO_CHANGE)     | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mac_inst    | ram_dfs_26010/ram_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mac_inst    | ram_dfs_26100/ram_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------+-----------+----------------------+--------------+
+|factor      | ram_bins_26100/ram_reg | Implied   | 64 x 8               | RAM64M x 3   | 
+|factor      | ram_bins/ram_reg       | Implied   | 64 x 8               | RAM64M x 3   | 
++------------+------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance mac_inst/i_104/ram_adc/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_inst/i_267/ram_dfs_26010/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_inst/i_272/ram_dfs_26100/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:01:12 . Memory (MB): peak = 1739.305 ; gain = 540.234 ; free physical = 758 ; free virtual = 21190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:20 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 634 ; free virtual = 21064
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mac_inst    | ram_adc/ram_reg       | 4 K x 8(NO_CHANGE)     | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mac_inst    | ram_dfs_26010/ram_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|mac_inst    | ram_dfs_26100/ram_reg | 128 x 8(READ_FIRST)    | W |   | 128 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------------+-----------+----------------------+--------------+
+|factor      | ram_bins_26100/ram_reg | Implied   | 64 x 8               | RAM64M x 3   | 
+|factor      | ram_bins/ram_reg       | Implied   | 64 x 8               | RAM64M x 3   | 
++------------+------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (rs485_bins_inst/sync_st_reg[3]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (rs485_bins_inst/sync_st_reg[2]) is unused and will be removed from module factor.
+WARNING: [Synth 8-3332] Sequential element (event_env_rd_reg) is unused and will be removed from module factor.
+INFO: [Synth 8-4480] The timing for the instance mac_inst/ram_adc/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_inst/ram_dfs_26010/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance mac_inst/ram_dfs_26100/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:26 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 518 ; free virtual = 20999
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:27 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 533 ; free virtual = 21016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:10 ; elapsed = 00:01:27 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 533 ; free virtual = 21016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 584 ; free virtual = 21016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 583 ; free virtual = 21015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 582 ; free virtual = 21014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 582 ; free virtual = 21014
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_apo      |         1|
+|2     |fifo_arp      |         1|
+|3     |fifo_ser      |         6|
+|4     |ila_eth_rx    |         1|
+|5     |ila_eth_tx    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |fifo_apo    |     1|
+|2     |fifo_arp    |     1|
+|3     |fifo_ser    |     1|
+|4     |fifo_ser__1 |     1|
+|5     |fifo_ser__2 |     1|
+|6     |fifo_ser__3 |     1|
+|7     |fifo_ser__4 |     1|
+|8     |fifo_ser__5 |     1|
+|9     |ila_eth_rx  |     1|
+|10    |ila_eth_tx  |     1|
+|11    |BUFG        |     7|
+|12    |CARRY4      |   225|
+|13    |LUT1        |   119|
+|14    |LUT2        |   352|
+|15    |LUT3        |   544|
+|16    |LUT4        |   430|
+|17    |LUT5        |   725|
+|18    |LUT6        |  1663|
+|19    |MMCME2_ADV  |     1|
+|20    |MUXF7       |   258|
+|21    |MUXF8       |    58|
+|22    |RAM64M      |     6|
+|23    |RAMB18E1    |     2|
+|24    |RAMB36E1    |     1|
+|25    |FDCE        |    10|
+|26    |FDE_1       |     8|
+|27    |FDPE        |    42|
+|28    |FDRE        |  4375|
+|29    |FDSE        |   272|
+|30    |FD_1        |     5|
+|31    |LDC         |     8|
+|32    |IBUF        |    48|
+|33    |OBUF        |    38|
+|34    |OBUFT       |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------------+------+
+|      |Instance             |Module                     |Cells |
++------+---------------------+---------------------------+------+
+|1     |top                  |                           |  9424|
+|2     |  pll_inst           |pll                        |     7|
+|3     |    inst             |pll_clk_wiz                |     7|
+|4     |  mac_inst           |mac                        |  5102|
+|5     |    crc_inst         |crc                        |    72|
+|6     |    event_arp        |events__5                  |     5|
+|7     |    event_26010_dfs  |events__6                  |     8|
+|8     |    event_26100_bins |events_0                   |     5|
+|9     |    event_26100_dfs  |events_1                   |     7|
+|10    |    event_adc        |events_2                   |     8|
+|11    |    ram_adc          |ram_adc                    |    52|
+|12    |    ram_dfs_26010    |ram_dual_v                 |    32|
+|13    |    ram_dfs_26100    |ram_dual_v_3               |    42|
+|14    |  event_envelope     |events                     |     5|
+|15    |  ad9850_inst        |ad9850                     |   122|
+|16    |  ram_bins           |ram_dual2                  |    19|
+|17    |  ram_bins_26100     |ram_dual_v__parameterized0 |    16|
+|18    |  rs485_bins_inst    |rs485_bins                 |   518|
+|19    |    uart_rx_inst     |UART_RX                    |   105|
+|20    |    uart_tx_inst     |uart_tx_bins               |   107|
+|21    |  rs485_dfs_inst     |rs485_dfs                  |   276|
+|22    |    uart_rx_dfs      |uart_rx_dfs                |    85|
+|23    |    uart_tx_dfs      |uart_tx_dfs                |    59|
++------+---------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.156 ; gain = 611.086 ; free physical = 580 ; free virtual = 21012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:09 . Memory (MB): peak = 1810.156 ; gain = 261.320 ; free physical = 634 ; free virtual = 21062
+Synthesis Optimization Complete : Time (s): cpu = 00:01:11 ; elapsed = 00:01:28 . Memory (MB): peak = 1810.164 ; gain = 611.086 ; free physical = 640 ; free virtual = 21068
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 620 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 27 instances were transformed.
+  FDE_1 => FDRE (inverted pins: C): 8 instances
+  FD_1 => FDRE (inverted pins: C): 5 instances
+  LDC => LDCE: 8 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+441 Infos, 113 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:32 . Memory (MB): peak = 1810.164 ; gain = 611.250 ; free physical = 664 ; free virtual = 21096
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/vladimir/Downloads/FACTOR-I_17.04.2020_bins/project_led.runs/synth_3/factor.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file factor_utilization_synth.rpt -pb factor_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.31 . Memory (MB): peak = 1834.168 ; gain = 0.000 ; free physical = 636 ; free virtual = 21072
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 31 11:44:13 2020...

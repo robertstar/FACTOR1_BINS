@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 16:27:10 2021
+# Process ID: 29817
+# Current directory: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/impl_3
+# Command line: vivado -log factor1_bins.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source factor1_bins.tcl -notrace
+# Log file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/impl_3/factor1_bins.vdi
+# Journal file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/impl_3/vivado.jou
+#-----------------------------------------------------------
+source factor1_bins.tcl -notrace

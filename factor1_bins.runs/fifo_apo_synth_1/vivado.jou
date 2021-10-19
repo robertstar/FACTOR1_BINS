@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep  2 13:29:55 2020
+# Process ID: 25083
+# Current directory: /home/vladimir/FACTOR2_bins/project_led.runs/fifo_apo_synth_1
+# Command line: vivado -log fifo_apo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_apo.tcl
+# Log file: /home/vladimir/FACTOR2_bins/project_led.runs/fifo_apo_synth_1/fifo_apo.vds
+# Journal file: /home/vladimir/FACTOR2_bins/project_led.runs/fifo_apo_synth_1/vivado.jou
+#-----------------------------------------------------------
+source fifo_apo.tcl -notrace

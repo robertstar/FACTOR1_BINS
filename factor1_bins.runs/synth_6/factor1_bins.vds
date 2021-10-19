@@ -1,0 +1,937 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 16:25:35 2021
+# Process ID: 29548
+# Current directory: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6
+# Command line: vivado -log factor1_bins.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source factor1_bins.tcl
+# Log file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/factor1_bins.vds
+# Journal file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/vivado.jou
+#-----------------------------------------------------------
+source factor1_bins.tcl -notrace
+Command: synth_design -top factor1_bins -part xc7a100tfgg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29568
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2339.246 ; gain = 0.000 ; free physical = 1490 ; free virtual = 8358
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'factor1_bins' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:23]
+	Parameter IDLE bound to: 3'b000 
+	Parameter WRITE bound to: 3'b001 
+	Parameter READ bound to: 3'b010 
+	Parameter PAUSE bound to: 3'b011 
+	Parameter adc_read_ofset bound to: 270 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'pll' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll.v:73]
+INFO: [Synth 8-6157] synthesizing module 'pll_clk_wiz' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll_clk_wiz.v:71]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 20.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 20.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.250000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/opt/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'pll_clk_wiz' (4#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll_clk_wiz.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pll' (5#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll.v:73]
+INFO: [Synth 8-6157] synthesizing module 'pll_dac' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/pll_dac_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'pll_dac' (6#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/pll_dac_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mac' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:23]
+	Parameter rx_IDLE bound to: 0 - type: integer 
+	Parameter rx_PREAMBULE bound to: 1 - type: integer 
+	Parameter rx_ETH_layer bound to: 2 - type: integer 
+	Parameter rx_IPv4_layer bound to: 3 - type: integer 
+	Parameter rx_ARP_layer bound to: 4 - type: integer 
+	Parameter rx_ARP_TRL bound to: 5 - type: integer 
+	Parameter rx_ARP_FCS bound to: 6 - type: integer 
+	Parameter rx_ICMP_layer bound to: 7 - type: integer 
+	Parameter rx_ICMP_FCS bound to: 8 - type: integer 
+	Parameter rx_UDP_layer bound to: 9 - type: integer 
+	Parameter rx_APO bound to: 10 - type: integer 
+	Parameter rx_DFS bound to: 11 - type: integer 
+	Parameter rx_RS485 bound to: 12 - type: integer 
+	Parameter rx_VARU bound to: 13 - type: integer 
+	Parameter rx_BINS bound to: 14 - type: integer 
+	Parameter rx_DELAY bound to: 15 - type: integer 
+	Parameter tx_IDLE bound to: 0 - type: integer 
+	Parameter tx_ADC bound to: 1 - type: integer 
+	Parameter tx_ARP bound to: 2 - type: integer 
+	Parameter tx_UDP bound to: 3 - type: integer 
+	Parameter tx_ICMP bound to: 4 - type: integer 
+	Parameter tx_26010 bound to: 5 - type: integer 
+	Parameter tx_26100 bound to: 6 - type: integer 
+	Parameter tx_FCS bound to: 7 - type: integer 
+	Parameter tx_IGP bound to: 8 - type: integer 
+	Parameter PRE_IDLE bound to: 5'b00000 
+	Parameter PRE_26010_HEADER bound to: 5'b00001 
+	Parameter PRE_26010_CRC bound to: 5'b00010 
+	Parameter PRE_26010_FIFO_HEADER bound to: 5'b00011 
+	Parameter PRE_26010_FIFO_DFS_WAIT bound to: 5'b00100 
+	Parameter PRE_26010_FIFO_DFS_DATA bound to: 5'b00101 
+	Parameter PRE_26010_FIFO_DFS_ZERO bound to: 5'b00110 
+	Parameter PRE_26010_FIFO_DFS_TIMEOUT bound to: 5'b00111 
+	Parameter PRE_26100_HEADER bound to: 5'b01000 
+	Parameter PRE_26100_CRC bound to: 5'b01001 
+	Parameter PRE_26100_FIFO_HEADER bound to: 5'b01010 
+	Parameter PRE_26100_FIFO_BINS_WAIT bound to: 5'b01011 
+	Parameter PRE_26100_FIFO_BINS_DATA bound to: 5'b01100 
+	Parameter PRE_26100_FIFO_BINS_TIMEOUT bound to: 5'b01101 
+	Parameter PRE_26100_FIFO_DFS_WAIT bound to: 5'b01110 
+	Parameter PRE_26100_FIFO_DFS_DATA bound to: 5'b01111 
+	Parameter PRE_26100_FIFO_DFS_TIMEOUT bound to: 5'b10000 
+	Parameter PRE_26100_FIFO_DFS_ZERO bound to: 5'b10001 
+	Parameter PRE_END bound to: 5'b10010 
+	Parameter PRE_26010_CLEAR_FIFO bound to: 5'b10011 
+	Parameter PRE_26100_CLEAR_FIFO bound to: 5'b10100 
+INFO: [Synth 8-6157] synthesizing module 'crc' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/crc.sv:23]
+	Parameter Tp bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'crc' (7#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/crc.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'events' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/events.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'events' (8#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/events.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'fifo_apo' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_apo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_apo' (9#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_apo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram_adc' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_adc.sv:45]
+	Parameter words bound to: 4096 - type: integer 
+	Parameter addr_w bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_adc' (10#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_adc.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'fifo_arp' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_arp_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_arp' (11#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_arp_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'fifo_ser' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_ser_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_ser' (12#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/fifo_ser_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_v' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+	Parameter words bound to: 127 - type: integer 
+	Parameter addr_w bound to: 7 - type: integer 
+	Parameter addr_end bound to: 113 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_v' (13#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+INFO: [Synth 8-5575] Util Can't resize: variable case item [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:2085]
+INFO: [Synth 8-5575] Util Can't resize: variable case item [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:2386]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:4044]
+INFO: [Synth 8-6157] synthesizing module 'ila_eth_rx' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/ila_eth_rx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_eth_rx' (14#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/ila_eth_rx_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:4061]
+INFO: [Synth 8-6157] synthesizing module 'ila_eth_tx' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/ila_eth_tx_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_eth_tx' (15#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/realtime/ila_eth_tx_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_eth_rx1'. This will prevent further optimization [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:4044]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_eth_tx1'. This will prevent further optimization [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:4061]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'crc_inst'. This will prevent further optimization [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:335]
+INFO: [Synth 8-6155] done synthesizing module 'mac' (16#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/mac.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ad9850' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ad9850.sv:23]
+WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ad9850.sv:68]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ad9850.sv:130]
+INFO: [Synth 8-6155] done synthesizing module 'ad9850' (17#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ad9850.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rs485_dfs' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485.sv:23]
+	Parameter speed bound to: 9600 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_rx_dfs' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_rx_dfs.sv:32]
+	Parameter CLKS_PER_BIT bound to: 5208 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter RX_START_BIT bound to: 3'b001 
+	Parameter RX_DATA_BITS bound to: 3'b010 
+	Parameter RX_PARITY_BIT bound to: 3'b011 
+	Parameter RX_STOP_BIT bound to: 3'b100 
+	Parameter CLEANUP bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx_dfs' (18#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_rx_dfs.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_dfs' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_tx_dfs.sv:30]
+	Parameter CLKS_PER_BIT bound to: 5208 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter TX_START_BIT bound to: 3'b001 
+	Parameter TX_DATA_BITS bound to: 3'b010 
+	Parameter TX_STOP_BIT bound to: 3'b011 
+	Parameter CLEANUP bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_dfs' (19#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_tx_dfs.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'rs485_dfs' (20#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rs485_bins' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485_bins.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/UART_RX.sv:30]
+	Parameter CLKS_PER_BIT bound to: 1085 - type: integer 
+	Parameter IDLE bound to: 3'b000 
+	Parameter RX_START_BIT bound to: 3'b001 
+	Parameter RX_DATA_BITS bound to: 3'b010 
+	Parameter RX_PARITY_BIT bound to: 3'b011 
+	Parameter RX_STOP_BIT bound to: 3'b100 
+	Parameter CLEANUP bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (21#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/UART_RX.sv:30]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485_bins.sv:122]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485_bins.sv:160]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_bins' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_tx_bins.sv:23]
+	Parameter CLOCK_FREQUENCY bound to: 125000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY bound to: 2'b01 
+	Parameter HALF_BAUD_CLK_REG_VALUE bound to: 541 - type: integer 
+	Parameter HALF_BAUD_CLK_REG_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_bins' (22#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/uart_tx_bins.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'rs485_bins' (23#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/rs485_bins.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual2' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual2.sv:23]
+	Parameter words bound to: 64 - type: integer 
+	Parameter addr_w bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual2' (24#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_v__parameterized0' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+	Parameter words bound to: 64 - type: integer 
+	Parameter addr_w bound to: 6 - type: integer 
+	Parameter addr_end bound to: 49 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_v__parameterized0' (24#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:801]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:808]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:813]
+INFO: [Synth 8-226] default block is never used [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:834]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:842]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:924]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:1021]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:1034]
+INFO: [Synth 8-6157] synthesizing module 'ram_dual_v__parameterized1' [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+	Parameter words bound to: 1050 - type: integer 
+	Parameter addr_w bound to: 10 - type: integer 
+	Parameter addr_end bound to: 1024 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ram_dual_v__parameterized1' (24#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/ram_dual_v.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2086]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2150]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2222]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2466]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2265]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:2206]
+INFO: [Synth 8-6155] done synthesizing module 'factor1_bins' (25#1) [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/new/factor1_bins.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.246 ; gain = 0.000 ; free physical = 2213 ; free virtual = 9095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.246 ; gain = 0.000 ; free physical = 2234 ; free virtual = 9122
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2339.246 ; gain = 0.000 ; free physical = 2234 ; free virtual = 9122
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2339.246 ; gain = 0.000 ; free physical = 2222 ; free virtual = 9111
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26100'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26100'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26010'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'mac_inst/fifo_26010'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_rx'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_rx'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_tx'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_dfs_inst/fifo_tx'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_rx'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_rx'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_tx'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_ser/fifo_ser/fifo_ser_in_context.xdc] for cell 'rs485_bins_inst/fifo_tx'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_arp/fifo_arp/fifo_arp_in_context.xdc] for cell 'mac_inst/fifo_arp_inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_arp/fifo_arp/fifo_arp_in_context.xdc] for cell 'mac_inst/fifo_arp_inst'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_apo/fifo_apo/fifo_apo_in_context.xdc] for cell 'mac_inst/fifo_apo_inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/fifo_apo/fifo_apo/fifo_apo_in_context.xdc] for cell 'mac_inst/fifo_apo_inst'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/ila_eth_rx/ila_eth_rx/ila_eth_rx_in_context.xdc] for cell 'mac_inst/ila_eth_rx1'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/ila_eth_rx/ila_eth_rx/ila_eth_rx_in_context.xdc] for cell 'mac_inst/ila_eth_rx1'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/ila_eth_tx/ila_eth_tx/ila_eth_tx_in_context.xdc] for cell 'mac_inst/ila_eth_tx1'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/ila_eth_tx/ila_eth_tx/ila_eth_tx_in_context.xdc] for cell 'mac_inst/ila_eth_tx1'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/pll_dac_1/pll_dac/pll_dac_in_context.xdc] for cell 'pll_dac1'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/.Xil/Vivado-29548-pc/pll_dac_1/pll_dac/pll_dac_in_context.xdc] for cell 'pll_dac1'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll_inst/inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll_board.xdc] for cell 'pll_inst/inst'
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll_inst/inst'
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll.xdc] for cell 'pll_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/sources_1/ip/pll/pll.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor1_bins_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor1_bins_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/constrs_1/new/LED.xdc]
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/constrs_1/new/LED.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.srcs/constrs_1/new/LED.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor1_bins_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor1_bins_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/dont_touch.xdc]
+Finished Parsing XDC File [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/factor1_bins_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/factor1_bins_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2379.086 ; gain = 0.000 ; free physical = 2114 ; free virtual = 9004
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2379.086 ; gain = 0.000 ; free physical = 2114 ; free virtual = 9004
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_26010' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_26100' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_apo_inst' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/fifo_arp_inst' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/ila_eth_rx1' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'mac_inst/ila_eth_tx1' at clock pin 'clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_bins_inst/fifo_rx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_bins_inst/fifo_tx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_dfs_inst/fifo_rx' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'rs485_dfs_inst/fifo_tx' at clock pin 'wr_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2224 ; free virtual = 9107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2224 ; free virtual = 9107
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst/inst. (constraint file  /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/dont_touch.xdc, line 10).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/fifo_26010. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/fifo_26100. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rs485_dfs_inst/fifo_rx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rs485_bins_inst/fifo_rx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rs485_dfs_inst/fifo_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for rs485_bins_inst/fifo_tx. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/fifo_arp_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/fifo_apo_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/ila_eth_rx1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for mac_inst/ila_eth_tx1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for pll_dac1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2224 ; free virtual = 9107
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'eth_rx_state_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_pre_arp_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_prepare_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'eth_tx_i_reg' in module 'mac'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_st_reg' in module 'ad9850'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_dds_reg' in module 'ad9850'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_rx_dfs'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx_dfs'
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_tx_state_reg' in module 'rs485_dfs'
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'write_st_reg' in module 'rs485_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'fifo_tx_state_reg' in module 'rs485_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_rst_phy_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'dac_st_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'bins_st_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'apo_alg_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'alg_work_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'env_st_reg' in module 'factor1_bins'
+INFO: [Synth 8-802] inferred FSM for state register 'adc_i_reg' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 rx_IDLE |                             0000 |                             0000
+            rx_PREAMBULE |                             0001 |                             0001
+            rx_ETH_layer |                             0010 |                             0010
+           rx_IPv4_layer |                             0011 |                             0011
+            rx_UDP_layer |                             0100 |                             1001
+                  rx_APO |                             0101 |                             1010
+                  rx_DFS |                             0110 |                             1011
+                 rx_BINS |                             0111 |                             1110
+                 rx_VARU |                             1000 |                             1101
+            rx_ARP_layer |                             1001 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_rx_state_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                PRE_IDLE |                            00000 |                            00000
+    PRE_26100_CLEAR_FIFO |                            00001 |                            10100
+        PRE_26100_HEADER |                            00010 |                            01000
+           PRE_26100_CRC |                            00011 |                            01001
+   PRE_26100_FIFO_HEADER |                            00100 |                            01010
+PRE_26100_FIFO_BINS_WAIT |                            00101 |                            01011
+PRE_26100_FIFO_BINS_DATA |                            00110 |                            01100
+PRE_26100_FIFO_BINS_TIMEOUT |                            00111 |                            01101
+ PRE_26100_FIFO_DFS_WAIT |                            01000 |                            01110
+ PRE_26100_FIFO_DFS_DATA |                            01001 |                            01111
+ PRE_26100_FIFO_DFS_ZERO |                            01010 |                            10001
+PRE_26100_FIFO_DFS_TIMEOUT |                            01011 |                            10000
+    PRE_26010_CLEAR_FIFO |                            01100 |                            10011
+        PRE_26010_HEADER |                            01101 |                            00001
+           PRE_26010_CRC |                            01110 |                            00010
+   PRE_26010_FIFO_HEADER |                            01111 |                            00011
+ PRE_26010_FIFO_DFS_WAIT |                            10000 |                            00100
+ PRE_26010_FIFO_DFS_DATA |                            10001 |                            00101
+ PRE_26010_FIFO_DFS_ZERO |                            10010 |                            00110
+PRE_26010_FIFO_DFS_TIMEOUT |                            10011 |                            00111
+                 PRE_END |                            10100 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_prepare_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                 0000000000000000
+                 iSTATE1 |                               01 |                 0000000000000001
+                 iSTATE2 |                               10 |                 0000000000000010
+                  iSTATE |                               11 |                 0000000000000011
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_tx_i_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'eth_pre_arp_reg' using encoding 'sequential' in module 'mac'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_st_reg' using encoding 'one-hot' in module 'ad9850'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                     000000000001 |                             0000
+                 iSTATE4 |                     000000000010 |                             0001
+                 iSTATE1 |                     000000000100 |                             0010
+                  iSTATE |                     000000001000 |                             0011
+                 iSTATE0 |                     000000010000 |                             0100
+                iSTATE10 |                     000000100000 |                             0101
+                 iSTATE9 |                     000001000000 |                             0110
+                 iSTATE7 |                     000010000000 |                             0111
+                 iSTATE8 |                     000100000000 |                             1000
+                 iSTATE6 |                     001000000000 |                             1001
+                 iSTATE3 |                     010000000000 |                             1010
+                 iSTATE2 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_dds_reg' using encoding 'one-hot' in module 'ad9850'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                              000
+            RX_START_BIT |                            00010 |                              001
+            RX_DATA_BITS |                            00100 |                              010
+             RX_STOP_BIT |                            01000 |                              100
+                 CLEANUP |                            10000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'one-hot' in module 'uart_rx_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+            TX_START_BIT |                              001 |                              001
+            TX_DATA_BITS |                              010 |                              010
+             TX_STOP_BIT |                              011 |                              011
+                 CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE5 |                              010 |                             0010
+                 iSTATE1 |                              011 |                             0011
+                 iSTATE2 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+                 iSTATE3 |                              110 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_tx_state_reg' using encoding 'sequential' in module 'rs485_dfs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+            RX_START_BIT |                           000010 |                              001
+            RX_DATA_BITS |                           000100 |                              010
+           RX_PARITY_BIT |                           001000 |                              011
+             RX_STOP_BIT |                           010000 |                              100
+                 CLEANUP |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                       0000000001 |                             0000
+                 iSTATE2 |                       0000000010 |                             0001
+                 iSTATE1 |                       0000000100 |                             0010
+                 iSTATE0 |                       0000001000 |                             0011
+                  iSTATE |                       0000010000 |                             0100
+                 iSTATE8 |                       0000100000 |                             0101
+                 iSTATE6 |                       0001000000 |                             0110
+                 iSTATE4 |                       0010000000 |                             0111
+                 iSTATE5 |                       0100000000 |                             1000
+                 iSTATE7 |                       1000000000 |                             1111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fifo_tx_state_reg' using encoding 'one-hot' in module 'rs485_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_st_reg' using encoding 'one-hot' in module 'rs485_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                             0000
+                 iSTATE0 |                              010 |                             0001
+                 iSTATE1 |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_rst_phy_reg' using encoding 'one-hot' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0100 |                             0010
+                 iSTATE2 |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'apo_alg_reg' using encoding 'one-hot' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                             0000
+                 iSTATE0 |                                1 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'adc_i_reg' using encoding 'sequential' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'env_st_reg' using encoding 'one-hot' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                             0000
+                 iSTATE0 |                             0010 |                             0001
+                 iSTATE1 |                             0100 |                             0010
+                 iSTATE2 |                             1000 |                             0011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bins_st_reg' using encoding 'one-hot' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                         00000000
+                 iSTATE0 |                                1 |                         00000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'alg_work_reg' using encoding 'sequential' in module 'factor1_bins'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                             0001 |                              000
+                  iSTATE |                             0010 |                              001
+                 iSTATE0 |                             0100 |                              010
+                 iSTATE2 |                             1000 |                              111
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dac_st_reg' using encoding 'one-hot' in module 'factor1_bins'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2217 ; free virtual = 9096
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   26 Bit       Adders := 2     
+	  10 Input   20 Bit       Adders := 3     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 7     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 13    
+	   2 Input    7 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 5     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
+	   3 Input      1 Bit         XORs := 6     
+	   6 Input      1 Bit         XORs := 7     
+	   8 Input      1 Bit         XORs := 1     
+	   5 Input      1 Bit         XORs := 4     
+	   7 Input      1 Bit         XORs := 7     
+	  10 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 3     
+	  12 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	               26 Bit    Registers := 2     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 94    
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 152   
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 97    
++---Muxes : 
+	  16 Input   48 Bit        Muxes := 1     
+	  10 Input   48 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 23    
+	  16 Input   32 Bit        Muxes := 2     
+	  13 Input   32 Bit        Muxes := 1     
+	  10 Input   32 Bit        Muxes := 3     
+	  21 Input   32 Bit        Muxes := 2     
+	   9 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 2     
+	   6 Input   32 Bit        Muxes := 6     
+	  15 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 4     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 12    
+	   8 Input   16 Bit        Muxes := 1     
+	  10 Input   16 Bit        Muxes := 5     
+	  16 Input   16 Bit        Muxes := 1     
+	  20 Input   16 Bit        Muxes := 2     
+	   2 Input   13 Bit        Muxes := 1     
+	   5 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 6     
+	   4 Input   12 Bit        Muxes := 1     
+	  12 Input   12 Bit        Muxes := 1     
+	  15 Input   12 Bit        Muxes := 1     
+	   6 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   6 Input   11 Bit        Muxes := 1     
+	   3 Input   11 Bit        Muxes := 2     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 45    
+	   4 Input    8 Bit        Muxes := 14    
+	  12 Input    8 Bit        Muxes := 1     
+	  15 Input    8 Bit        Muxes := 1     
+	  10 Input    8 Bit        Muxes := 2     
+	   3 Input    8 Bit        Muxes := 7     
+	   6 Input    8 Bit        Muxes := 3     
+	   7 Input    8 Bit        Muxes := 2     
+	  21 Input    8 Bit        Muxes := 5     
+	   5 Input    8 Bit        Muxes := 2     
+	  31 Input    8 Bit        Muxes := 1     
+	   9 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	  21 Input    7 Bit        Muxes := 1     
+	  52 Input    7 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 3     
+	   2 Input    6 Bit        Muxes := 21    
+	  21 Input    6 Bit        Muxes := 1     
+	   6 Input    6 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 2     
+	   5 Input    6 Bit        Muxes := 1     
+	  21 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 15    
+	   4 Input    5 Bit        Muxes := 2     
+	  52 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	  32 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	  13 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	   8 Input    4 Bit        Muxes := 1     
+	  21 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 18    
+	   8 Input    3 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 3     
+	   5 Input    3 Bit        Muxes := 2     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	  15 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 8     
+	   7 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 8     
+	   4 Input    2 Bit        Muxes := 1     
+	  12 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 334   
+	   4 Input    1 Bit        Muxes := 73    
+	   3 Input    1 Bit        Muxes := 42    
+	   7 Input    1 Bit        Muxes := 12    
+	  15 Input    1 Bit        Muxes := 9     
+	   8 Input    1 Bit        Muxes := 11    
+	  12 Input    1 Bit        Muxes := 9     
+	  16 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 25    
+	  21 Input    1 Bit        Muxes := 30    
+	   9 Input    1 Bit        Muxes := 17    
+	   5 Input    1 Bit        Muxes := 19    
+	  52 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 42    
+	  11 Input    1 Bit        Muxes := 1     
+	  87 Input    1 Bit        Muxes := 2     
+	  20 Input    1 Bit        Muxes := 1     
+	  46 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+RAM Pipeline Warning: Read Address Register Found For RAM ram_adc/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_adc/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM ram_adc/ram_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2161 ; free virtual = 9058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mac_inst    | ram_adc/ram_reg | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++-------------+------------------------+-----------+----------------------+----------------------------+
+|Module Name  | RTL Object             | Inference | Size (Depth x Width) | Primitives                 | 
++-------------+------------------------+-----------+----------------------+----------------------------+
+|factor1_bins | ram_bins_26100/ram_reg | Implied   | 64 x 8               | RAM64X1D x 2	RAM64M x 2	   | 
+|factor1_bins | ram_varu/ram_reg       | Implied   | 1 K x 8              | RAM64X1D x 32	RAM64M x 32	 | 
+|factor1_bins | ram_bins/ram_reg       | Implied   | 64 x 8               | RAM64X1D x 2	RAM64M x 2	   | 
++-------------+------------------------+-----------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 2379.086 ; gain = 39.840 ; free physical = 2037 ; free virtual = 8931
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:07 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2094 ; free virtual = 8944
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mac_inst    | ram_adc/ram_reg | 4 K x 8(READ_FIRST)    | W |   | 4 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
++------------+-----------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++-------------+------------------------+-----------+----------------------+----------------------------+
+|Module Name  | RTL Object             | Inference | Size (Depth x Width) | Primitives                 | 
++-------------+------------------------+-----------+----------------------+----------------------------+
+|factor1_bins | ram_bins_26100/ram_reg | Implied   | 64 x 8               | RAM64X1D x 2	RAM64M x 2	   | 
+|factor1_bins | ram_varu/ram_reg       | Implied   | 1 K x 8              | RAM64X1D x 32	RAM64M x 32	 | 
+|factor1_bins | ram_bins/ram_reg       | Implied   | 64 x 8               | RAM64X1D x 2	RAM64M x 2	   | 
++-------------+------------------------+-----------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mac_inst/ram_adc/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fifo_apo      |         1|
+|2     |fifo_arp      |         1|
+|3     |fifo_ser      |         6|
+|4     |ila_eth_rx    |         1|
+|5     |ila_eth_tx    |         1|
+|6     |pll_dac       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |fifo_apo   |     1|
+|2     |fifo_arp   |     1|
+|3     |fifo_ser   |     1|
+|4     |fifo_ser_  |     5|
+|9     |ila_eth_rx |     1|
+|10    |ila_eth_tx |     1|
+|11    |pll_dac    |     1|
+|12    |BUFG       |     8|
+|13    |CARRY4     |   226|
+|14    |LUT1       |   155|
+|15    |LUT2       |   515|
+|16    |LUT3       |   363|
+|17    |LUT4       |   379|
+|18    |LUT5       |   364|
+|19    |LUT6       |  1304|
+|20    |MMCME2_ADV |     1|
+|21    |MUXF7      |   191|
+|22    |MUXF8      |    34|
+|23    |RAM64M     |    36|
+|24    |RAM64X1D   |    36|
+|25    |RAMB36E1   |     1|
+|26    |FDCE       |    10|
+|27    |FDPE       |    42|
+|28    |FDRE       |  3281|
+|30    |FDSE       |    29|
+|31    |LDC        |     8|
+|32    |IBUF       |    48|
+|33    |OBUF       |    39|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 2466.430 ; gain = 127.184 ; free physical = 2099 ; free virtual = 8949
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 2466.430 ; gain = 87.344 ; free physical = 2147 ; free virtual = 8997
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 2466.438 ; gain = 127.184 ; free physical = 2147 ; free virtual = 8997
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2466.438 ; gain = 0.000 ; free physical = 2232 ; free virtual = 9083
+INFO: [Netlist 29-17] Analyzing 542 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2466.438 ; gain = 0.000 ; free physical = 2182 ; free virtual = 9032
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 89 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 9 instances
+  LDC => LDCE: 8 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 36 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 36 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+135 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:20 . Memory (MB): peak = 2466.438 ; gain = 127.305 ; free physical = 2409 ; free virtual = 9259
+INFO: [Common 17-1381] The checkpoint '/home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/synth_6/factor1_bins.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file factor1_bins_utilization_synth.rpt -pb factor1_bins_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 19 16:27:05 2021...

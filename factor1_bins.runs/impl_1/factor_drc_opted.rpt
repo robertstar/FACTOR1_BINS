@@ -1,0 +1,41 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed Sep  2 12:51:55 2020
+| Host         : pc running 64-bit Ubuntu 19.10
+| Command      : report_drc -file factor_drc_opted.rpt -pb factor_drc_opted.pb -rpx factor_drc_opted.rpx
+| Design       : factor
+| Device       : xc7a100tfgg676-2
+| Speed File   : -2
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+---------------------------------+------------+
+| Rule   | Severity | Description                     | Violations |
++--------+----------+---------------------------------+------------+
+| RPBF-3 | Warning  | IO port buffering is incomplete | 1          |
++--------+----------+---------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port PHY_MDIO expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

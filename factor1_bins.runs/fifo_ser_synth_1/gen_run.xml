@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="fifo_ser_synth_1" LaunchPart="xc7a100tfgg676-2" LaunchTime="1599042592">
+  <File Type="RDS-DCP" Name="fifo_ser.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="fifo_ser_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="fifo_ser.tcl"/>
+  <File Type="RDS-UTIL" Name="fifo_ser_utilization_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="fifo_ser_reports.tcl"/>
+  <File Type="RDS-RDS" Name="fifo_ser.vds"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ser">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_ser/fifo_ser.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_ser"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/fifo_ser">
+    <File Path="$PSRCDIR/sources_1/ip/fifo_ser/fifo_ser.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="fifo_ser"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

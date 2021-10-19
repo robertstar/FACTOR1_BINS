@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Sep  2 13:31:41 2020
+# Process ID: 25800
+# Current directory: /home/vladimir/FACTOR2_bins/project_led.runs/synth_5
+# Command line: vivado -log factor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source factor.tcl
+# Log file: /home/vladimir/FACTOR2_bins/project_led.runs/synth_5/factor.vds
+# Journal file: /home/vladimir/FACTOR2_bins/project_led.runs/synth_5/vivado.jou
+#-----------------------------------------------------------
+source factor.tcl -notrace

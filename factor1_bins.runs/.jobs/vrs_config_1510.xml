@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="pll_dac_synth_1" LaunchDir="/home/master/Projj/FACTOR-I_17.04.2020/project_led.runs/pll_dac_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

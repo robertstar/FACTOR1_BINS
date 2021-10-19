@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="fifo_ser_synth_1" LaunchDir="/home/vladimir/FACTOR2_bins/project_led.runs/fifo_ser_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_arp_synth_1" LaunchDir="/home/vladimir/FACTOR2_bins/project_led.runs/fifo_arp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_apo_synth_1" LaunchDir="/home/vladimir/FACTOR2_bins/project_led.runs/fifo_apo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_5" LaunchDir="/home/vladimir/FACTOR2_bins/project_led.runs/synth_5" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="fifo_ser_synth_1"/>
+		<Parent Id="fifo_arp_synth_1"/>
+		<Parent Id="fifo_apo_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

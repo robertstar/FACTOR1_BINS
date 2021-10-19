@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 16:21:50 2021
+# Process ID: 28421
+# Current directory: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/ila_eth_rx_synth_1
+# Command line: vivado -log ila_eth_rx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_eth_rx.tcl
+# Log file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/ila_eth_rx_synth_1/ila_eth_rx.vds
+# Journal file: /home/master/FPGA_proj/FACTOR1_bins/factor1_bins.runs/ila_eth_rx_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ila_eth_rx.tcl -notrace

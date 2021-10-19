@@ -1,0 +1,121 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:20:17 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pll_dac'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of pll_dac (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:20:15 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'pll'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of pll (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:20:11 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_eth_tx'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_eth_tx (xilinx.com:ip:ila:6.2) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:20:03 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_eth_rx'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_eth_rx (xilinx.com:ip:ila:6.2) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:19:55 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_dac'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_dac (xilinx.com:ip:ila:6.2) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
+| Date         : Tue Oct 19 16:19:47 2021
+| Host         : pc running 64-bit Ubuntu 18.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7a100tfgg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_1 (xilinx.com:ip:ila:6.2) from (Rev. 10) to (Rev. 11)
+

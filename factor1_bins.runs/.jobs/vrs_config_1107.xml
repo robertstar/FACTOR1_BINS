@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mult_rf_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/mult_rf_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="cic_d10_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/cic_d10_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fir_20k_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/fir_20k_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_apo_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/fifo_apo_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_arp_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/fifo_arp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="fifo_icmp_synth_1" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/fifo_icmp_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_2" LaunchDir="/home/vladimir/FACTOR-A35_17.12.19_1138/project_led.runs/synth_2" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="mult_rf_synth_1"/>
+		<Parent Id="cic_d10_synth_1"/>
+		<Parent Id="fir_20k_synth_1"/>
+		<Parent Id="fifo_apo_synth_1"/>
+		<Parent Id="fifo_arp_synth_1"/>
+		<Parent Id="fifo_icmp_synth_1"/>
+	</Run>
+</Runs>
+
